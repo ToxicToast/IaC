@@ -4,7 +4,7 @@
 
 - [x] Azkaban Deployment
 - [x] Azkaban Service
-- [x] Azkaban Broker Secret
+- [ ] Azkaban Broker Secret
 - [ ] Azkaban Ingress Route (Traefik)
 
 ### Inventory
@@ -22,3 +22,24 @@
 - [ ] SmartMirror Database Secret
 - [ ] SmartMirror Frontend
 - [ ] SmartMirror Admin
+
+### Blog
+- [ ] Blog Deployment
+- [ ] Blog Service
+- [ ] Blog Broker Secret
+- [ ] Blog Database Secret
+- [ ] Blog Frontend
+- [ ] Blog Admin
+
+### Raid
+- [ ] Raid Deployment
+- [ ] Raid Service
+- [ ] Raid Broker Secret
+- [ ] Raid Database Secret
+- [ ] Raid Frontend
+- [ ] Raid Admin
+
+### Cronjob
+- [ ] Cronjob Deployment
+- [ ] Cronjob Service
+- [ ] Cronjob Broker Secret

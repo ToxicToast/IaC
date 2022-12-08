@@ -4,7 +4,7 @@ import { brokerNamespace, defaultNamespace } from '../utils/namespace.util';
 
 const appName = 'azkaban';
 const appLabels = GenerateLabels(appName, 'dev', '4.2.5', 'cicd', appName);
-const kafkaUrl = btoa('kafka-kafka-bootstrap.' + brokerNamespace + ':9092');
+const kafkaUrl = btoa('kafka-kafka-brokers.' + brokerNamespace + ':9092');
 
 const secret = new k8s.core.v1.Secret(appName + '-kafka', {
   metadata: {

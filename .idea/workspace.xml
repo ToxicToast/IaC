@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fd1816-1ece-4378-9530-a4d71d20b5a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pulumi/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulumi/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulumi/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulumi/azkaban/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulumi/utils/generateLabels.util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulumi/utils/namespace.util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pulumi/azkaban/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Pulumi/azkaban/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670499369773</updated>
-      <workItem from="1670499370921" duration="6885000" />
+      <workItem from="1670499370921" duration="9324000" />
     </task>
     <servers />
   </component>
