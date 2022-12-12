@@ -1,6 +1,7 @@
 import * as k8s from '@pulumi/kubernetes';
 import { GenerateLabels } from '../utils/generateLabels.util';
 import { brokerNamespace, defaultNamespace } from '../utils/namespace.util';
+import {LivenessCheck, ReadinessCheck} from "../utils/healthcheck.util";
 
 const appName = 'azkaban';
 const appLabels = GenerateLabels(appName, 'dev', '4.2.5', 'cicd', appName);
@@ -60,6 +61,8 @@ const deployment = new k8s.apps.v1.Deployment(appName + '-deployment', {
                 memory: '512Mi',
               },
             },
+            readinessProbe: ReadinessCheck(true, 'api/health', 'HTTP'),
+            livenessProbe: LivenessCheck(true, 'api/health', 'HTTP'),
           },
         ],
       },
