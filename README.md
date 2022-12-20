@@ -43,3 +43,13 @@
 - [ ] Cronjob Deployment
 - [ ] Cronjob Service
 - [ ] Cronjob Broker Secret
+
+- 
+## Homelab Proxmox Stuff
+- [x] Create Image Template 
+
+## Homelab Terraform Stuff
+- [ ] Create Terraform Files
+
+## Homelab Ansible Stuff
+- [ ] Create Ansible Files
