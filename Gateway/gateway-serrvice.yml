@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: azkaban-service
+  namespace: azkaban
+spec:
+  selector:
+    app.kubernetes.io/component: azkaban-gateway
+    app.kubernetes.io/instance: azkaban-gateway
+    app.kubernetes.io/name: azkaban-gateway
+  type: ClusterIP
+  ports:
+    - port: 3333
