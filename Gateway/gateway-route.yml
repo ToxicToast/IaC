@@ -1,0 +1,18 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: gateway-route
+  namespace: azkaban
+
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`api.thoraxia.de`)
+      kind: Rule
+      services:
+        - name: azkaban-service
+          namespace: azkaban
+  tls:
+    secretName: toxictoast.de-tls
+    namespace: default
