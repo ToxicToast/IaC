@@ -28,6 +28,6 @@ spec:
           env:
             - name: broker
               valueFrom:
-                secretKeyRef:
+                configMapKeyRef:
                   name: azkaban-config
                   key: broker
