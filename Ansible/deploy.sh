@@ -1,0 +1,1 @@
+ansible-playbook site.yml -i inventory/azkaban/hosts.ini

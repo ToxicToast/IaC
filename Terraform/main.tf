@@ -42,3 +42,7 @@
  variable "proxmox_worker_ipcfg" {
    type = list(string)
  }
+
+ variable "ssh_key" {
+   type = string
+ }

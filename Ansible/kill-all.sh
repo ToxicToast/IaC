@@ -1,0 +1,1 @@
+ansible-playbook reset.yml -i inventory/azkaban/hosts.ini
