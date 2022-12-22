@@ -1,7 +1,7 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: gateway-route
+  name: azkaban-route
   namespace: azkaban
 
 spec:
@@ -15,4 +15,3 @@ spec:
           namespace: azkaban
   tls:
     secretName: toxictoast.de-tls
-    namespace: default
