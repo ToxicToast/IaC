@@ -26,7 +26,7 @@ spec:
           ports:
             - containerPort: 3333
           env:
-            - name: broker
+            - name: BROKER_URL
               valueFrom:
                 configMapKeyRef:
                   name: azkaban-config
