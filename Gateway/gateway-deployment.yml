@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: toxictoast/toxictv-gateway:latest
+          image: toxictoast/toxictv-azkaban:latest
           ports:
             - containerPort: 3333
           env:
