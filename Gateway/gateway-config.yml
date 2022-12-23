@@ -4,4 +4,4 @@ metadata:
   name: azkaban-config
   namespace: azkaban
 data:
-  broker: "kafka-headless.infra"
+  broker: "kafka.infra:9092"
