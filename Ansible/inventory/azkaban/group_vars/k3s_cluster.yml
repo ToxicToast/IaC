@@ -1,0 +1,22 @@
+k3s_version: v1.23.4+k3s1
+systemd_dir: /etc/systemd/system
+
+flannel_iface: "eth0"
+apiserver_endpoint: "192.168.1.150"
+
+k3s_token: "---"
+
+extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=10 --kube-apiserver-arg default-unreachable-toleration-seconds=20 --kube-controller-arg node-monitor-period=15s --kube-controller-arg node-monitor-grace-period=15s --kubelet-arg node-status-update-frequency=10s"
+extra_agent_args: "--kubelet-arg node-status-update-frequency=5s"
+
+kube_vip_tag_version: "v0.4.3"
+metal_lb_speaker_tag_version: "v0.12.1"
+metal_lb_controller_tag_version: "v0.12.1"
+
+metal_lb_ip_range: "192.168.1.200-192.168.1.210"
+
+traefik_endpoint_ip: "192.168.1.150"
+traefik_dash_dns_name: "traefik.thoraxia.de"
+rancher_dns_name: "rancher.thoraxia.de"
+
+cert_manager_ver: "v1.7.1"

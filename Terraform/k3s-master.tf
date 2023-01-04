@@ -7,7 +7,7 @@ resource "proxmox_vm_qemu" "k3s-master" {
   clone = var.proxmox_clone_name
   cores = 1
   sockets = 2
-  memory = 2048
+  memory = 3072
 
   network {
     bridge = "vmbr0"
