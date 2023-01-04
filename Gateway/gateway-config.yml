@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: azkaban-config
-  namespace: azkaban
-data:
-  broker: "kafka-headless.infra:9092"
